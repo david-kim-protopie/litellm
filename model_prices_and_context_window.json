@@ -9934,34 +9934,62 @@
         ]
     },
     "dashscope/qwen3.5-flash": {
-        "cache_read_input_token_cost": 2e-08,
         "litellm_provider": "dashscope",
         "max_input_tokens": 1000000,
         "max_output_tokens": 65536,
         "max_tokens": 65536,
-        "input_cost_per_token": 1e-07,
-        "output_cost_per_token": 4e-07,
         "mode": "chat",
         "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
         "supports_function_calling": true,
         "supports_reasoning": true,
         "supports_tool_choice": true,
-        "supports_vision": true
+        "supports_vision": true,
+        "tiered_pricing": [
+            {
+                "input_cost_per_token": 2.9e-08,
+                "output_cost_per_token": 2.87e-07,
+                "range": [0, 128000.0]
+            },
+            {
+                "input_cost_per_token": 1.15e-07,
+                "output_cost_per_token": 1.147e-06,
+                "range": [128000.0, 256000.0]
+            },
+            {
+                "input_cost_per_token": 1.72e-07,
+                "output_cost_per_token": 1.72e-06,
+                "range": [256000.0, 1000000.0]
+            }
+        ]
     },
     "dashscope/qwen3.5-flash-2026-02-23": {
-        "cache_read_input_token_cost": 2e-08,
         "litellm_provider": "dashscope",
         "max_input_tokens": 1000000,
         "max_output_tokens": 65536,
         "max_tokens": 65536,
-        "input_cost_per_token": 1e-07,
-        "output_cost_per_token": 4e-07,
         "mode": "chat",
         "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
         "supports_function_calling": true,
         "supports_reasoning": true,
         "supports_tool_choice": true,
-        "supports_vision": true
+        "supports_vision": true,
+        "tiered_pricing": [
+            {
+                "input_cost_per_token": 2.9e-08,
+                "output_cost_per_token": 2.87e-07,
+                "range": [0, 128000.0]
+            },
+            {
+                "input_cost_per_token": 1.15e-07,
+                "output_cost_per_token": 1.147e-06,
+                "range": [128000.0, 256000.0]
+            },
+            {
+                "input_cost_per_token": 1.72e-07,
+                "output_cost_per_token": 1.72e-06,
+                "range": [256000.0, 1000000.0]
+            }
+        ]
     },
     "dashscope/qwen3.5-plus": {
         "litellm_provider": "dashscope",
